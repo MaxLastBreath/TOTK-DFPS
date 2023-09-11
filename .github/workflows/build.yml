@@ -1,6 +1,6 @@
 name: build
 
-on: workflow_dispatch
+on: [workflow_dispatch, push]
 
 jobs:
   build:
@@ -19,4 +19,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: artifacts
-        path: ./*
+        path: ./deploy/*

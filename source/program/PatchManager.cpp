@@ -30,6 +30,10 @@ const PatchInfo PatchManager::patches[] = {
         PatchGameVersion::VERSION_1_1_2,
         static_cast<uintptr_t>(0x021B9A20)
     ),
+        DeviceGetProcAddressHook::CreatePatchInfo(
+        PatchGameVersion::VERSION_1_2_0,
+        static_cast<uintptr_t>(0x021b09c0)
+    ),
 
     // Static FPS (Interval)
     GameIntervalHook::CreatePatchInfo(
@@ -47,6 +51,10 @@ const PatchInfo PatchManager::patches[] = {
     GameIntervalHook::CreatePatchInfo(
         PatchGameVersion::VERSION_1_1_2,
         static_cast<uintptr_t>(0x008F6670)
+    ),
+        GameIntervalHook::CreatePatchInfo(
+        PatchGameVersion::VERSION_1_2_0,
+        static_cast<uintptr_t>(0x008a932c)
     ),
 
     // Static FPS (Shrines)
@@ -85,6 +93,14 @@ const PatchInfo PatchManager::patches[] = {
         PatchGameVersion::VERSION_1_1_2,
         PatchType::NOP, static_cast<uintptr_t>(0x019BD9E8)
     ),
+    PatchInfo(
+        PatchGameVersion::VERSION_1_2_0,
+        PatchType::NOP, static_cast<uintptr_t>(0x019a2374)
+    ),
+    PatchInfo(
+        PatchGameVersion::VERSION_1_2_0,
+        PatchType::NOP, static_cast<uintptr_t>(0x019adbe8)
+    ),
 
 #if DYNAMIC_TIMESTEP
     // Instruction NOP
@@ -104,7 +120,10 @@ const PatchInfo PatchManager::patches[] = {
         PatchGameVersion::VERSION_1_1_2,
         PatchType::NOP, static_cast<uintptr_t>(0x007F7A58)
     ),
-
+    PatchInfo(
+        PatchGameVersion::VERSION_1_2_0,
+        PatchType::NOP, static_cast<uintptr_t>(0x007c9cf8)
+    ),
     // Dynamic FPS
     GameSpeedCalcHook::CreatePatchInfo(
         PatchGameVersion::VERSION_1_0_0,
@@ -121,6 +140,10 @@ const PatchInfo PatchManager::patches[] = {
     GameSpeedCalcHook::CreatePatchInfo(
         PatchGameVersion::VERSION_1_1_2,
         static_cast<uintptr_t>(0x007F7A28)
+    ),
+        GameSpeedCalcHook::CreatePatchInfo(
+        PatchGameVersion::VERSION_1_2_0,
+        static_cast<uintptr_t>(0x007c9cc8)
     ),
 #endif
 
@@ -141,6 +164,10 @@ const PatchInfo PatchManager::patches[] = {
         PatchGameVersion::VERSION_1_1_2,
         static_cast<uintptr_t>(0x01D3675C)
     ),
+    UltrahandHook::CreatePatchInfo(
+        PatchGameVersion::VERSION_1_2_0,
+        static_cast<uintptr_t>(0x01d2879c)
+    ),
 
     // Movie Render
     MovieRenderHook::CreatePatchInfo(
@@ -159,7 +186,14 @@ const PatchInfo PatchManager::patches[] = {
         PatchGameVersion::VERSION_1_1_2,
         static_cast<uintptr_t>(0x02489658)
     ),
-
+        MovieRenderHook::CreatePatchInfo(
+        PatchGameVersion::VERSION_1_1_2,
+        static_cast<uintptr_t>(0x02489658)
+    ),
+        MovieRenderHook::CreatePatchInfo(
+        PatchGameVersion::VERSION_1_2_0,
+        static_cast<uintptr_t>(0x0247f058)
+    ),
     // Movie Media Data
     MovieMediaDataHook::CreatePatchInfo(),
 };

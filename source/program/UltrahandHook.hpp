@@ -4,13 +4,13 @@
 #include "lib.hpp"
 #include "PatchManager.hpp"
 
-struct AimStruct_100 {
-    uint8_t unk_0x00[0xC2C];
+struct AimStruct_11X {
+    uint8_t unk_0x00[0xC54];
     float AimSpeedY;
 };
 
-struct AimStruct_11X {
-    uint8_t unk_0x00[0xC54];
+struct AimStruct_100 {
+    uint8_t unk_0x00[0xC2C];
     float AimSpeedY;
 };
 

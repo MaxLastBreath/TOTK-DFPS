@@ -1,0 +1,21 @@
+name: build
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: pixelkiri/devkitpro-switch-dev:latest
+    steps:
+    - name: Checkout 
+      uses: actions/checkout@v3
+      with:
+        submodules: true
+    - name: Build
+      run: |
+        make -j2
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: artifacts
+        path: ./*

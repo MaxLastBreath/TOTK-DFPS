@@ -16,7 +16,7 @@ struct AimStruct_11X {
 
 union AimStruct {
     AimStruct_100 VERSION_1_0_0;
-    AimStruct_11X VERSION_1_1_X;
+    AimStruct_11X VERSION_1_X_X;
 };
 
 HOOK_DEFINE_TRAMPOLINE(UltrahandHook) {

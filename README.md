@@ -6,8 +6,8 @@ Install Devkit Pro and run make
 
 ## Mods
 
-### Static FPS
-Static FPS allows you to set your desired update interval:
+### FPS
+FPS allows you to set your desired update interval:
 - 1 = 60 FPS
 - 2 = 30 FPS
 - 3 = 20 FPS
@@ -30,4 +30,5 @@ While using Dynamic FPS, you can freely change the game's internal update rate w
 - The original developers of ExLaunch
 - ChucksFeedAndSeed
 - SomeRandomPeople
+- MaxLastBreath
 

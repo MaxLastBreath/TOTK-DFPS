@@ -15,7 +15,7 @@ struct AimStruct_11X {
 };
 
 struct AimStruct_12X {
-    uint8_t unk_0x00[0xC2C];
+    uint8_t unk_0x00[0xC54];
     float AimSpeedY;
 };
 

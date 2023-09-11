@@ -4,12 +4,17 @@
 #include "lib.hpp"
 #include "PatchManager.hpp"
 
+struct AimStruct_100 {
+    uint8_t unk_0x00[0xC2C];
+    float AimSpeedY;
+};
+
 struct AimStruct_11X {
     uint8_t unk_0x00[0xC54];
     float AimSpeedY;
 };
 
-struct AimStruct_100 {
+struct AimStruct_12X {
     uint8_t unk_0x00[0xC2C];
     float AimSpeedY;
 };
@@ -17,7 +22,7 @@ struct AimStruct_100 {
 union AimStruct {
     AimStruct_100 VERSION_1_0_0;
     AimStruct_11X VERSION_1_1_X;
-    AimStruct_11X VERSION_1_2_X;
+    AimStruct_12X VERSION_1_2_X;
 };
 
 HOOK_DEFINE_TRAMPOLINE(UltrahandHook) {

@@ -192,10 +192,6 @@ const PatchInfo PatchManager::patches[] = {
         static_cast<uintptr_t>(0x01d2879c)
     ),
     UltrahandHook::CreatePatchInfo(
-        PatchGameVersion::VERSION_1_2_0,
-        static_cast<uintptr_t>(0x01d2879c)
-    ),
-    UltrahandHook::CreatePatchInfo(
         PatchGameVersion::VERSION_1_2_1,
         static_cast<uintptr_t>(0x01d34adc)
     ),

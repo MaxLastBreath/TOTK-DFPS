@@ -28,7 +28,10 @@ extern "C" PatchGameVersion GetGameVersion(const char* version) {
     else if (strncmp(version, GAME_VERSION_1_1_2, 16) == 0) {
         return PatchGameVersion::VERSION_1_1_2;
     }
-
+    else if (strncmp(version, GAME_VERSION_1_2_0, 16) == 0) {
+        return PatchGameVersion::VERSION_1_2_0;
+    }
+    
     return PatchGameVersion::VERSION_UNKNOWN;
 }
 

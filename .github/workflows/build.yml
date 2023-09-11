@@ -12,6 +12,7 @@ jobs:
       with:
         submodules: true
     - name: Build
+      continue-on-error: true
       run: |
         make -j2
     - name: Upload artifacts

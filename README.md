@@ -1,5 +1,5 @@
 # DynamicFPS++
-Some simple mods for totk
+Repository for DFPS++, note this isn't the official DFPS (made by ChucksFeedAndSeed), this respository is cloned from [here](https://bitbucket.org/totk-fpsplusplus/dynamicfps/src/main/). I will be updating this to future version releases, if i had the source for DFPS 1.5.5, I would update it instead. As this is currently the only source for any sort of DFPS, it will be the one getting updated to work with future releases by me.
 
 ## Building
 Install Devkit Pro and run make

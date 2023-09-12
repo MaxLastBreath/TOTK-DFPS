@@ -12,7 +12,8 @@ enum class PatchGameVersion : int32_t {
     VERSION_1_1_0,
     VERSION_1_1_1,
     VERSION_1_1_2,
-    VERSION_1_2_0
+    VERSION_1_2_0,
+    VERSION_1_2_1
 };
 
 enum class PatchType : int32_t {

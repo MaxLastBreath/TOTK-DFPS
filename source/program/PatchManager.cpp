@@ -117,6 +117,7 @@ const PatchInfo PatchManager::patches[] = {
         PatchGameVersion::VERSION_1_2_1,
         PatchType::NOP, static_cast<uintptr_t>(0x019bbd38)
     ),
+    
 #if DYNAMIC_TIMESTEP
     // Instruction NOP
     PatchInfo(
@@ -143,6 +144,7 @@ const PatchInfo PatchManager::patches[] = {
         PatchGameVersion::VERSION_1_2_1,
         PatchType::NOP, static_cast<uintptr_t>(0x007ede9c)
     ),
+
     // Dynamic FPS
     GameSpeedCalcHook::CreatePatchInfo(
         PatchGameVersion::VERSION_1_0_0,
@@ -186,10 +188,6 @@ const PatchInfo PatchManager::patches[] = {
     UltrahandHook::CreatePatchInfo(
         PatchGameVersion::VERSION_1_1_2,
         static_cast<uintptr_t>(0x01D3675C)
-    ),
-    UltrahandHook::CreatePatchInfo(
-        PatchGameVersion::VERSION_1_2_0,
-        static_cast<uintptr_t>(0x01d2879c)
     ),
     UltrahandHook::CreatePatchInfo(
         PatchGameVersion::VERSION_1_2_0,

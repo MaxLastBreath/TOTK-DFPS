@@ -14,6 +14,11 @@ struct AimStruct_11X {
     float AimSpeedY;
 };
 
+struct AimStruct_12X {
+    uint8_t unk_0x00[0xC54];
+    float AimSpeedY;
+};
+
 union AimStruct {
     AimStruct_100 VERSION_1_0_0;
     AimStruct_11X VERSION_1_1_X;

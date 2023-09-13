@@ -5,14 +5,13 @@ on: [workflow_dispatch, push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: pixelkiri/devkitpro-switch-dev:latest
+    container: pixelkiri/devkitpro-alpine-switch:latest
     steps:
-    - name: Checkout 
+    - name: Checkout
       uses: actions/checkout@v3
       with:
         submodules: true
     - name: Build
-      continue-on-error: true
       run: |
         make -j2
     - name: Upload artifacts

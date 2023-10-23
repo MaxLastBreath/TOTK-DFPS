@@ -1,4 +1,5 @@
 .vscode/*
+.vs/*
 build/*
 out/*
 deploy/*
@@ -8,3 +9,7 @@ deploy/*
 *.npdm
 *.map
 *.lst
+.vs/slnx.sqlite
+.vs/TOTK-DFPS/v17/.wsuo
+.vs/TOTK-DFPS/v17/Browse.VC.db
+.vs/VSWorkspaceState.json

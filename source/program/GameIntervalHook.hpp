@@ -3,6 +3,7 @@
 #include "types.h"
 #include "lib.hpp"
 #include "PatchManager.hpp"
+#include "nn.hpp"
 
 typedef void (*IntervalFunc_Arg0_unk_0x28Fn)(void*, void*);
 

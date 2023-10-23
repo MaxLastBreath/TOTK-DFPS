@@ -1,5 +1,6 @@
 #include "lib.hpp"
 #include "nn/oe.hpp"
+#include "nn/fs.hpp"
 #include "PatchManager.hpp"
 #include "main.hpp"
 
@@ -43,10 +44,10 @@ extern "C" void exl_main(void* x0, void* x1) {
     nn::oe::DisplayVersion displayVersion;
 
     exl::hook::Initialize();
-    // testing
-    // nn::fs::MountRom(dfps.ini)
+
     nn::oe::GetDisplayVersion(&displayVersion);
     gGameVersion = GetGameVersion(displayVersion.name);
+
 
     PatchManager::ApplyPatches();
 }

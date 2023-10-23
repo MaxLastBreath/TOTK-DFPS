@@ -4,6 +4,8 @@
 
 namespace nn::fs {
 
+    void SetFileSize(FileHandle handle, long size);
+
     /* 
         Create a file.
         path: Path where to create the path.

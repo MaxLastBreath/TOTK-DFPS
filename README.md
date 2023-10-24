@@ -2,17 +2,16 @@
 Repository for DFPS++, note this isn't the official DFPS (made by ChucksFeedAndSeed), this respository is cloned from [here](https://bitbucket.org/totk-fpsplusplus/dynamicfps/src/main/). I will be updating this to future version releases, if i had the source for DFPS 1.5.5, I would update it instead. As this is currently the only source for any sort of DFPS, it will be the one getting updated to work with future releases by me.
 
 ## Building
-Install Devkit Pro and run make
+- Clone repo and run actions build.
+- Install devkit pro and use make.
 
 ## Mods
 
 ### FPS
 FPS allows you to set your desired update interval:
-- 1 = 60 FPS
-- 2 = 30 FPS
-- 3 = 20 FPS
-
-By default, this is set to 1 (60 fps), however you can change it either by editing the Makefile, or by writing `PRESENT_INTERVAL=X` after the make command.
+- Edit the default.ini file included in the romfs folder.
+- By default its set to 60
+- Supports, 20, 30 and 60 FPS cap.
 
 #### Cutscene fix
 Alongside static fps is cutscene fix, which will limit your framerate to the movie's framerate

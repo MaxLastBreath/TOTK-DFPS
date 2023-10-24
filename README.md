@@ -7,7 +7,7 @@ Repository for DFPS++, note this isn't the official DFPS (made by ChucksFeedAndS
 
 ## Mods
 
-### FPS
+### FPS - Config File.
 FPS allows you to set your desired update interval:
 - Edit the default.ini file included in the romfs folder.
 - By default its set to 60
